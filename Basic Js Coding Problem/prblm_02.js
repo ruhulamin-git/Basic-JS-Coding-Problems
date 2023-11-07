@@ -1,5 +1,10 @@
 // Write a function that takes a string and returns the reverse of the string
 
-var newObject = "Hi there, this is Ruhul Amin from MD Infotech";
-var reversedObject = newObject.split('').reverse().join('');
-console.log(reversedObject);
+function GroupOfWord(word) {
+    var output = ' ';
+    for (var i = word.length - 1; i >= 0; i--) {
+        output += word.charAt(i);
+    }
+    return output;
+}
+console.log(GroupOfWord('Hi there, this is Ruhul Amin from MD Infotech'));
